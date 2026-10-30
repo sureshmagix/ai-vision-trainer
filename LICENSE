@@ -1,0 +1,41 @@
+AI Vision Trainer Licensing & Legal Compliance Notice
+======================================================
+
+1. Core Application License
+---------------------------
+The core platform code of AI Vision Trainer (including the frontend user interface,
+backend API services, workflow orchestration, database schemas, and documentation)
+is licensed under the Apache License, Version 2.0 (the "License"). You may obtain
+a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+2. Third-Party Dependencies and Ultralytics AGPL Gate
+------------------------------------------------------
+AI Vision Trainer interfaces with third-party machine learning frameworks,
+most notably Ultralytics YOLO (including YOLO11 and YOLO26 model architectures).
+
+IMPORTANT NOTICE REGARDING ULTRALYTICS LICENSING:
+- Ultralytics YOLO software is published by Ultralytics LLC under the
+  GNU Affero General Public License v3.0 (AGPL-3.0) for open source use.
+- Under AGPL-3.0, if you modify or run Ultralytics software over a network,
+  you may be obligated to make your complete corresponding source code available.
+- For commercial, proprietary, or closed-source deployments where AGPL-3.0
+  compliance is not acceptable, organizations MUST acquire an Ultralytics
+  Commercial License directly from Ultralytics LLC (https://www.ultralytics.com/license).
+- AI Vision Trainer isolates model adapter execution to ensure explicit boundaries,
+  but users and organizations deploying this software are solely responsible for
+  compliance with upstream model and dataset licenses.
+
+3. Dataset and Pretrained Weight Licensing
+------------------------------------------
+Pretrained model checkpoints (e.g., weights downloaded from public repositories
+such as COCO, Objects365, or Ultralytics release assets) and public datasets are
+governed by their respective original publisher licenses. Users must verify
+that any dataset used for training complies with their intended commercial or
+academic usage terms.

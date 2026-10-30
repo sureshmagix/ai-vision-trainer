@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node & Frontend
+node_modules/
+.npm/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Ultralytics & Model Weights / Runs
+runs/
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+*.torchscript
+weights/
+datasets/
+uploads/
+storage/
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE / OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database & Cache
+*.sqlite3
+*.db
+dump.rdb
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

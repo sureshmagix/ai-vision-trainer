@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SystemHealthResponse",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["healthy", "degraded", "unhealthy"]
+    },
+    "app_name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "uptime_seconds": {
+      "type": "number"
+    },
+    "database": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string" },
+        "latency_ms": { "type": ["number", "null"] },
+        "engine": { "type": "string" }
+      },
+      "required": ["status", "engine"]
+    },
+    "redis": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string" },
+        "latency_ms": { "type": ["number", "null"] }
+      },
+      "required": ["status"]
+    },
+    "hardware": {
+      "type": "object",
+      "properties": {
+        "cpu_percent": { "type": "number" },
+        "memory_percent": { "type": "number" },
+        "memory_used_gb": { "type": "number" },
+        "memory_total_gb": { "type": "number" },
+        "disk_free_gb": { "type": "number" },
+        "accelerator": { "type": "string" },
+        "accelerator_available": { "type": "boolean" }
+      },
+      "required": ["cpu_percent", "memory_percent", "accelerator", "accelerator_available"]
+    }
+  },
+  "required": ["status", "app_name", "version", "environment", "timestamp"]
+}
